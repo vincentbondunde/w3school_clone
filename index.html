@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <title>Document</title>
+    <script src="assets/js/app.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="sticky top-0">
+        <div class="top-nav select-none flex">
+            <div class="top-left-nav flex-1 flex item-center justify-start">
+                <img src="https://scontent.flos6-1.fna.fbcdn.net/v/t39.30808-6/306149583_580886133837672_8720407359695224497_n.png?_nc_cat=107&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=CtbHqQWWv5MAX9WZn0Y&_nc_pt=5&_nc_zt=23&_nc_ht=scontent.flos6-1.fna&oh=00_AfDPfmddTNjhJjpUbekEU_hVDhUot4rcyF9sRp5tmh3IYg&oe=65904698" />
+                <div class="top-left-nav-cats flex h-full flex-row flex-1">
+                    <!-- Initailly Hidden Menu Dropdown -->
+                    <div class="menu-item h-full cursor-pointer flex-1 flex justify-center item-center hidden" id="hidden-dropdown-btn">
+                        <span class="menu-item-title">Menu</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="tuto-svg" class="menu-svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+
+                    </div>
+
+                    <div class="menu-item h-full cursor-pointer flex-1 flex justify-center item-center" id="first-dropdown-btn">
+                        <span class="menu-item-title">Tutorials</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="tuto-svg" class="menu-svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+
+                    </div>
+                    <div class="menu-item h-full cursor-pointer flex-1 flex justify-center item-center" id="second-dropdown-btn">
+                        <span class="menu-item-title">Exercises</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="exercises-svg" class="menu-svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+
+                    </div>
+                    <div class="menu-item h-full cursor-pointer flex-1 flex justify-center item-center" id="third-dropdown-btn">
+                        <span class="menu-item-title">Certificates</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="certificates-svg" class="menu-svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+
+                    </div>
+                    <div class="menu-item h-full cursor-pointer flex-1 flex justify-center item-center" id="forth-dropdown-btn">
+                        <span class="menu-item-title">Services</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="services-svg" class="menu-svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+            <div class="top-middle-nav flex justify-center flex item-center">
+                <div class="search-input-container">
+                    <input class="search-box" type="text" placeholder="Search...">
+                    <div class="search">
+                        <svg id="tnb-google-search-icon" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.8153 10.3439C12.6061 9.2673 13.0732 7.9382 13.0732 6.5C13.0732 2.91015 10.163 0 6.57318 0C2.98333 0 0.0731812 2.91015 0.0731812 6.5C0.0731812 10.0899 2.98333 13 6.57318 13C8.01176 13 9.3412 12.5327 10.4179 11.7415L10.4171 11.7422C10.4466 11.7822 10.4794 11.8204 10.5156 11.8566L14.3661 15.7071C14.7566 16.0976 15.3898 16.0976 15.7803 15.7071C16.1708 15.3166 16.1708 14.6834 15.7803 14.2929L11.9298 10.4424C11.8936 10.4062 11.8553 10.3734 11.8153 10.3439ZM12.0732 6.5C12.0732 9.53757 9.61075 12 6.57318 12C3.53561 12 1.07318 9.53757 1.07318 6.5C1.07318 3.46243 3.53561 1 6.57318 1C9.61075 1 12.0732 3.46243 12.0732 6.5Z" fill="black"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="mode-switcher-container rounded-full cursor-pointer flex item-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mode" id="dark-btn">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mode hidden" id="light-btn">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                    </svg>
+                </div>
+                  
+                  
+            </div>
+            <div class="top-right-nav flex-1 flex justify-end item-center">
+                <button class="ghost-button-with-icons flex item-center justify-center rounded-full first">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                    </svg>
+                    Spaces
+                </button>
+                <button class="ghost-button-with-icons flex item-center justify-center rounded-full second">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Get Certified
+                </button>
+                <div class="flex btn-group-bg-light-green rounded-full justify-center item-center group-btn">
+                    <button class="default-btn z-10 green flex item-center justify-center rounded-full">
+                        Sign Up
+                    </button>
+                    <button class="default-btn login-btn light-green flex item-center justify-center rounded-full">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Submenu -->
+        <div class="submenu-container h-full fixed w-full hidden">
+            <!-- tutorials -->
+            <div id="tutorials-submenu" class="hidden">
+                <div class="flex-wrap flex">
+                    <div class="submenu-box flex flex-col">
+                        <div class="submenu-box-header">Tutorial</div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                    </div>
+                    <div class="submenu-box flex flex-col">
+                        <div class="submenu-box-header">HTML and CSS</div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                    </div>
+                    
+                    <div class="submenu-box flex flex-col">
+                        <div class="submenu-box-header">HTML and CSS</div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- excercises -->
+            <div id="excercises-submenu" class="hidden">
+                <div class="flex-wrap flex">
+                    <div class="submenu-box flex flex-col">
+                        <div class="submenu-box-header">Excercise</div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                    </div>
+                    <div class="submenu-box flex flex-col">
+                        <div class="submenu-box-header">HTML and CSS</div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                    </div>
+                    
+                    <div class="submenu-box flex flex-col">
+                        <div class="submenu-box-header">HTML and CSS</div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- certificate -->
+            <div id="certificate-submenu" class="hidden">
+                <div class="flex-wrap flex">
+                    <div class="submenu-box flex flex-col">
+                        <div class="submenu-box-header">certificate</div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                    </div>
+                    <div class="submenu-box flex flex-col">
+                        <div class="submenu-box-header">HTML and CSS</div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                    </div>
+                    
+                    <div class="submenu-box flex flex-col">
+                        <div class="submenu-box-header">HTML and CSS</div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- services -->
+            <div id="services-submenu" class="hidden">
+                <div class="flex-wrap flex">
+                    <div class="submenu-box flex flex-col">
+                        <div class="submenu-box-header">services</div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                    </div>
+                    <div class="submenu-box flex flex-col">
+                        <div class="submenu-box-header">HTML and CSS</div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                    </div>
+                    
+                    <div class="submenu-box flex flex-col">
+                        <div class="submenu-box-header">HTML and CSS</div>
+                        <div class="flex item-center justify-start">
+                            <div>HTML</div>
+                            <div>Tutorial</div>
+                            <div>Reference</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-nav-container scrollbar-hide">
+            <div class="bottom-nav flex justify-start item-center">
+                <button class="caret-btn  sticky left-0" id="sub-navbar-caret-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JAVASCRIPT</span>
+                <span>SQL</span>
+                <span>PYTHON</span>
+                <span>JAVA</span>
+                <span>PHP</span>
+                <span>HOW TO</span>
+                <span>W3. CSS</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JAVASCRIPT</span>
+                <span>SQL</span>
+                <span>PYTHON</span>
+                <span>JAVA</span>
+                <span>PHP</span>
+                <span>HOW TO</span>
+                <span>W3. CSS</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JAVASCRIPT</span>
+                <span>SQL</span>
+                <span>PYTHON</span>
+                <span>JAVA</span>
+                <span>PHP</span>
+                <span>HOW TO</span>
+                <span>W3. CSS</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <button class="caret-btn  sticky right-0" id="sub-navbar-caret-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>                  
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="header-section-wrapper">
+        <div class="inner-header-section-wrapper">
+            <h1>Learn to Code</h1>
+            <h3>With the world's largest web developer site.</h3>
+            <div class="header-section-input-wrapper">
+                <input type="text" placeholder="Search our tutorials, e.g. HTML">
+                <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                  </svg>
+                </button>
+            </div>
+            <h4>Not Sure Where To Begin?</h4>
+
+        </div>
+    </div>
+    <!-- <div class="wave"></div> -->
+
+    <!-- Tutorials Section 1 -->
+<div>
+    <div class="tutorials-container">
+        <div class="tutorials-inner-wrapper light-blue">
+            <div class="tutorial-contents-left">
+                <h1 class="header-default">HTML</h1>
+                <p>The language for building web pages</p>
+                <button class="btn-btn-default green">Learn HTML</button>
+                <button class="btn-btn-default bright-yellow">Video Tutorial</button>
+                <button class="btn-btn-default black">HTML Reference</button>
+                <button class="btn-btn-default light-pink">Get Certified</button>
+            </div>
+
+            <div class="tutorial-contents-right">
+                <div class="tutorial-inner-content-right" id="gray">
+                    <h3 class="right-header-default" id="gray-text">HTML Example:</h3>
+                    <div class="right-empty-box" id="black"></div>
+                    <button class="btn-btn-default try-yourself-btn">Try it Yourself</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Tutorials Section 2 -->
+     <div class="tutorials-container">
+        <div class="tutorials-inner-wrapper light-yellow-tutorial-section">
+            <div class="tutorial-contents-left">
+                <h1 class="header-default">CSS</h1>
+                <p>The language for styling web pages</p>
+                <button class="btn-btn-default">Learn CSS</button>
+                <button class="btn-btn-default black">CSS Reference</button>
+                <button class="btn-btn-default light-pink">Get Certified</button>
+            </div>
+
+            <div class="tutorial-contents-right">
+                <div class="tutorial-inner-content-right" id="gray">
+                    <h3 class="right-header-default" id="gray-text">CSS Example:</h3>
+                    <div class="right-empty-box" id="black"></div>
+                    <button class="btn-btn-default try-yourself-btn">Try it Yourself</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Tutorials Section 3 -->
+     <div class="tutorials-container">
+        <div class="tutorials-inner-wrapper black-tutorial-section black">
+            <div class="tutorial-contents-left">
+                <h1 class="header-default">JavaScript</h1>
+                <p>The language for programming web pages</p>
+                <button class="btn-btn-default">Learn JavaScript</button>
+                <button class="btn-btn-default light-gray">JavaScript Reference</button>
+                <button class="btn-btn-default light-pink">JavaScript Certified</button>
+            </div>
+
+            <div class="tutorial-contents-right">
+                <div class="tutorial-inner-content-right" id="gray">
+                    <h3 class="right-header-default" id="gray-text">JavaScript Example:</h3>
+                    <div class="right-empty-box" id="black"></div>
+                    <button class="btn-btn-default try-yourself-btn">Try it Yourself</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Tutorials Section 4 -->
+     <div class="tutorials-container">
+        <div class="tutorials-inner-wrapper light-gray-tutorial-section">
+            <div class="tutorial-contents-left">
+                <h1 class="header-default">Phyton</h1>
+                <p>A popular programming language</p>
+                <button class="btn-btn-default">Learn Python</button>
+                <button class="btn-btn-default black">Python Reference</button>
+                <button class="btn-btn-default light-pink">Get Certified</button>
+            </div>
+
+            <div class="tutorial-contents-right">
+                <div class="tutorial-inner-content-right" id="gray">
+                    <h3 class="right-header-default" id="gray-text">Python Example:</h3>
+                    <div class="right-empty-box" id="black"></div>
+                    <button class="btn-btn-default try-yourself-btn">Try it Yourself</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Tutorials Section 5 -->
+     <div class="tutorials-container">
+        <div class="tutorials-inner-wrapper light-blue-tutorial-section">
+            <div class="tutorial-contents-left">
+                <h1 class="header-default">SQL</h1>
+                <p>A language for accessing databases</p>
+                <button class="btn-btn-default">Learn SQL</button>
+                <button class="btn-btn-default black">SQL Refrence</button>
+                <button class="btn-btn-default light-pink">Get Certified</button>
+            </div>
+
+            <div class="tutorial-contents-right">
+                <div class="tutorial-inner-content-right" id="gray">
+                    <h3 class="right-header-default" id="gray-text">SQL Example:</h3>
+                    <div class="right-empty-box" id="black"></div>
+                    <button class="btn-btn-default try-yourself-btn">Try it Yourself</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grid Tutorials First Section -->
+    <div class="grid-tutorial-wrapper black">
+        <div class="grid-tutorial-inner-wrapper light-pink">
+            <div class="grid-inner-header">
+                <h2>PHP</h2>
+            </div>
+            <div class="grid-inner-info">
+                <h4>A web server programming language</h4>
+            </div>
+            <button class="btn-btn-default black no-margin auto">Learn PHP</button>
+        </div>
+
+        <div class="grid-tutorial-inner-wrapper bright-yellow">
+            <div class="grid-inner-header">
+                <h2>PHP</h2>
+            </div>
+            <div class="grid-inner-info">
+                <h4>A web server programming language</h4>
+            </div>
+            <button class="btn-btn-default black no-margin auto">Learn PHP</button>
+        </div>
+
+        <div class="grid-tutorial-inner-wrapper light-gray">
+            <div class="grid-inner-header">
+                <h2>PHP</h2>
+            </div>
+            <div class="grid-inner-info">
+                <h4>A web server programming language</h4>
+            </div>
+            <button class="btn-btn-default black no-margin auto">Learn PHP</button>
+        </div>
+
+        <div class="grid-tutorial-inner-wrapper light-blue">
+            <div class="grid-inner-header">
+                <h2>PHP</h2>
+            </div>
+            <div class="grid-inner-info">
+                <h4>A web server programming language</h4>
+            </div>
+            <button class="btn-btn-default black no-margin auto">Learn PHP</button>
+        </div>
+
+        <div class="grid-tutorial-inner-wrapper dark-blue">
+            <div class="grid-inner-header">
+                <h2>PHP</h2>
+            </div>
+            <div class="grid-inner-info">
+                <h4>A web server programming language</h4>
+            </div>
+            <button class="btn-btn-default black no-margin auto">Learn PHP</button>
+        </div>
+
+        <div class="grid-tutorial-inner-wrapper gray">
+            <div class="grid-inner-header">
+                <h2>PHP</h2>
+            </div>
+            <div class="grid-inner-info">
+                <h4>A web server programming language</h4>
+            </div>
+            <button class="btn-btn-default black no-margin auto">Learn PHP</button>
+        </div>
+
+        <div class="grid-tutorial-inner-wrapper gray smaller-grid light-pink">
+            <div class="grid-inner-header">
+                <h2>C</h2>
+            </div>
+        </div>
+
+        <div class="grid-tutorial-inner-wrapper gray smaller-grid bright-yellow">
+            <div class="grid-inner-header">
+                <h2>C#</h2>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="grid-4-col-tutorial-wrapper black">
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid smaller-boxes light-gray">
+        <div class="grid-inner-header">
+            <h2>R</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid light-blue smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>Kotlin</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid dark-blue smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>Node.js</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid light-pink smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>React</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid bright-yellow smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>JSON</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid smaller-boxes light-gray">
+        <div class="grid-inner-header">
+            <h2>Vue</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid light-blue smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>MySQL</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid dark-blue smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>XML</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid light-pink smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>Sass</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid bright-yellow smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>Icons</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid smaller-boxes light-gray">
+        <div class="grid-inner-header">
+            <h2>RWD</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid light-blue smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>Graphics</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid dark-blue smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>SVG</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid light-pink smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>Canvas</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid bright-yellow smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>Raspberry pi</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid smaller-boxes light-gray">
+        <div class="grid-inner-header">
+            <h2>Cyber Security</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid light-blue smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>Colors</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid dark-blue smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>Git</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid dark-blue smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>Matplotlib</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid light-pink smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>Numpy</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid bright-yellow smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>Pandas</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid smaller-boxes light-gray">
+        <div class="grid-inner-header">
+            <h2>SciPy</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid light-blue smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>ASP</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid dark-blue smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>AngularJS</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid light-pink smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>MongoDB</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid bright-yellow smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>Statistics</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid smaller-boxes light-gray">
+        <div class="grid-inner-header">
+            <h2>Data Science</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid light-blue smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>Typing Speed</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid dark-blue smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>HowTo</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid light-pink smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>Code Game</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid bright-yellow smaller-boxes">
+        <div class="grid-inner-header">
+            <h2>Spaces</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid smaller-boxes light-gray">
+        <div class="grid-inner-header">
+            <h2>PostgreSQL</h2>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="grid-tutorial-wrapper black end">
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid light-pink end">
+        <div class="grid-inner-header">
+            <h2>Excel</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid bright-yellow end">
+        <div class="grid-inner-header">
+            <h2>Google Sheets</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid light-pink end">
+        <div class="grid-inner-header">
+            <h2>Machine Learning</h2>
+        </div>
+    </div>
+
+    <div class="grid-tutorial-inner-wrapper gray smaller-grid bright-yellow end">
+        <div class="grid-inner-header">
+            <h2>Artificial Intelligence</h2>
+        </div>
+    </div>
+</div>
+
+
+<div class="code-editor-wrapper black">
+    <div class="code-editor-inner-wrapper">
+        <h1>Code Editor</h1>
+        <h4>With our online code editor, you can edit code and view the result in your browser</h4>
+        <div class="code-editor-windows-wrapper">
+            <div class="top-side-code-editor-windows">
+                <div class="left-side-top-windows">
+                    <span class="dot"></span>
+                    <span class="dot yellow-dot"></span>
+                    <span class="dot green-dot"></span>
+                </div>
+                <div class="right-side-top-windows">
+                    <input class="disabled-text" type="text" disabled placeholder="www.w3schools.com/tryit/">
+                </div>
+            </div>
+            <div class="middle-side-code-editor-windows">
+                <div class="btn-middle-code-editor">Frontend</div>
+                <div class="btn-middle-code-editor inactive">Backend</div>
+            </div>
+            <div class="empty-wrapper-code-editor">
+                <div class="empty-white-space-code-editor"></div>
+            </div>
+        </div>
+        <button class="btn-btn-default less-radius">Try Frontend Editor (HTML/CSS/JS)</button>
+        <button class="btn-btn-default less-radius bright-yellow">Try Backend Editor (Python/PHP/Java/C..)</button>
+    </div>
+</div>
+    
+<div class="w3schools-spaces-wrapper">
+    <div class="w3schools-spaces-inner-wrapper">
+        <h1>W3Schools Spaces</h1>
+        <h3>If you want to create your own website, check out W3Schools Spaces.</h3>
+        <h4>It is free to use, and does not require any setup:</h4>
+        <img class="w3schools-spaces-img" src="images/dynamicspaces.gif" alt="">
+        <img class="w3schools-spaces-img second-img-spaces" src="images/how-spaces-works3.png" alt="">
+        <button class="btn-btn-default big-btn">Learn More</button>
+    </div>
+</div>
+
+<div class="w3schools-spaces-wrapper">
+    <div class="w3schools-spaces-inner-wrapper light" id="w3school-innner">
+        <h1>My Learning</h1>
+        <h3>Track your progress with our free "My Learning" program.</h3>
+        <h4>Log in to your account, and start earning points!</h4>
+        <img class="mylearning-pic" src="https://www.w3schools.com/myl-green-off.png" alt="">
+        <button class="btn-btn-default big-btn">Sign Up for Free</button>
+    </div>
+</div>
+
+<div class="w3schools-spaces-wrapper">
+    <div class="w3schools-spaces-inner-wrapper col-3 black">
+        <h1>Become a PRO User</h1>
+        <h3 class="pink">And Unlock Powerful Features:</h3>
+        <ul class="flex flex-col justify-center item-center">
+            <li class="flex flex-row">
+                <img src="https://www.w3schools.com/spaces/files/check3.db67d31e.svg" alt="">
+                <h4>Browse W3Schools without ads</h4>
+            </li>
+            <li class="flex flex-row">
+                <img src="https://www.w3schools.com/spaces/files/check3.db67d31e.svg" alt="">
+                <h4>Website hosting (Includes Spaces PRO) </h4>
+            </li>
+            <li class="flex flex-row">
+                <img src="https://www.w3schools.com/spaces/files/check3.db67d31e.svg" alt="">
+                <h4>Access to our HTML Video Tutorial</h4>
+            </li>
+        </ul>
+        <button class="btn-btn-default big-btn">Sign Up for Free</button>
+    </div>
+</div>
+
+<div class="w3schools-spaces-wrapper">
+    <div class="w3schools-spaces-inner-wrapper" style="background-color: #F3ECEA !important; color: black; padding-top: 78px;">
+        <h1>Color Picker</h1>
+        <h3 style="font-size: 19px;">W3School' Famous Color Picker:</h3>
+        <img class="mylearning-pic" src="https://www.w3schools.com/images/colorpicker.png" alt="">
+    </div>
+</div>
+
+<div class="w3schools-spaces-wrapper">
+    <div class="w3schools-spaces-inner-wrapper" style="background-color: #96D4D4; color: black; padding-top: 100px; padding-left: 10px; padding-right: 10px; padding-bottom: 50px;">
+        <h1 style="font-family: 'Freckle Face', cursive; font-size: 48px; font-weight: normal;">Code Game</h1>
+        <h3 style="margin-top: 0px; font-family: 'Freckle Face', cursive; font-size: 32px;">Help the lynx collect pine cones!</h3>
+        <img class="mylearning-pic" src="https://www.w3schools.com/images/w3lynx_200.png" alt="">
+        <button class="btn-btn-default black" style="margin-top: 30px;">Play Game</button>
+    </div>
+</div>
+
+<div class="w3schools-spaces-wrapper black" id="exercisesandquizes-section-wrapper">
+    <div class="w3schools-spaces-inner-wrapper black" id="exercisesandquizes-section-inner-wrapper">
+        <h1>Exercises and Quizzes</h1>
+        <h3>Test your skills!</h3>
+        <div class="flex flex-row justify-center item-center" id="btn-gap">
+            <button>Exercises</button>
+            <button class="bright-yellow color-black">Quizes</button>
+        </div>
+    </div>
+</div>
+
+<div class="web-templates-wrapper" id="web-template">
+    <div class="web-templates-inner-wrapper flex flex-col justify-center item-center">
+        <h1>Web Templates</h1>
+        <h3>Browse our selection of <span>free</span> responsive HTML Templates</h3>
+        <img src="https://www.w3schools.com/w3css_templates.jpg" alt="">
+        <button class="btn-btn-default black">Browse Templates</button>
+    </div>
+</div>
+
+<div class="kick-start-wrapper black">
+    <div class="color-pink">
+        <h1>Kickstart your career</h1>
+        <p>Get certified by completing a course</p>
+        <button class="btn-btn-default get-started-btn">Get started</button>
+    </div>
+</div>
+
+<div class="how-to-section" id="desktop">
+    <h2>How To Section</h2>
+    <h4>Code snippets for HTML, CSS and JavaScript</h4>
+    <h6>For example, how to create a slideshow:</h6>
+    <div class="code-editor-windows-wrapper" id="desktop-inner-wrapper">
+        <div class="top-side-code-editor-windows">
+            <div class="left-side-top-windows">
+                <span class="dot"></span>
+                <span class="dot yellow-dot"></span>
+                <span class="dot green-dot"></span>
+            </div>
+            <div class="right-side-top-windows">
+                <input class="disabled-text" type="text" disabled placeholder="www.w3schools.com/tryit/">
+            </div>
+        </div>
+        <div class="bottom-slideshow-wrapper">
+
+            <div class="bottom-slideshow-inner-wrapper">
+                <div class="slideshow-container" id="my-slides">
+                    <!-- slideshow images -->
+                    <div class="image-container">
+                        <img class="slideshow-imgs" id="first" src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt="">
+                        <div class="numbering">1/3</div>
+                        <div class="caption-number">Caption Text</div>
+
+                        <button class="slideshow-arrow" onclick="plusSlides(-1)">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                            </svg>
+                        </button>
+    
+                        <button class="slideshow-arrow-2" onclick="plusSlides(1)">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>                  
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="slideshow-container" id="my-slides">
+                    <!-- slideshow images -->
+                    <div class="image-container">
+                        <img class="slideshow-imgs" id="second" src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="">
+                        <div class="numbering">2/3</div>
+                        <div class="caption-number">Caption Two</div>
+
+                        <button class="slideshow-arrow" onclick="plusSlides(-1)">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                            </svg>
+                        </button>
+    
+                        <button class="slideshow-arrow-2" onclick="plusSlides(1)">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>                  
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="slideshow-container" id="my-slides">
+                    <!-- slideshow images -->
+                    <div class="image-container">
+                        <img class="slideshow-imgs" id="third" src="https://www.w3schools.com/howto/img_mountains_wide.jpg" alt="">
+                        <div class="numbering">3/3</div>
+                        <div class="caption-number">Caption Three</div>
+
+                        <button class="slideshow-arrow" onclick="plusSlides(-1)">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                            </svg>
+                        </button>
+    
+                        <button class="slideshow-arrow-2" onclick="plusSlides(1)">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>                  
+                        </button>
+                    </div>
+                </div>
+                <div class="dot-container">
+                    <span class="slideshow-dot" onclick="currentSlide(1)"></span>
+                    <span class="slideshow-dot" onclick="currentSlide(2)"></span>
+                    <span class="slideshow-dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="relative">
+        <div class="desktop-stand"></div>
+    </div>
+    <div class="flex justify-center item-center">
+    <button class="learn-how-to-btn black-btn">Learn How To</button>
+
+    </div>
+</div>
+<footer>
+    <div class="footer-inner-wrapper">
+        <div class="hidden-overflow">
+            <div class="footer-links"><img src="https://scontent.flos6-1.fna.fbcdn.net/v/t39.30808-6/306149583_580886133837672_8720407359695224497_n.png?_nc_cat=107&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=CtbHqQWWv5MAX9WZn0Y&_nc_pt=5&_nc_zt=23&_nc_ht=scontent.flos6-1.fna&oh=00_AfDPfmddTNjhJjpUbekEU_hVDhUot4rcyF9sRp5tmh3IYg&oe=65904698"" alt=""></div>
+            <div class="footer-links">SPACES</div>
+            <div class="footer-links">UPGRADE</div>
+            <div class="footer-links">AD-FREE</div>
+            <div class="footer-links">NEWSLETTER</div>
+            <div class="footer-links">GET CERTIFIED</div>
+            <div class="footer-links">REPORT ERROR</div>
+        </div>
+        <div class="bottom-tutos flex flex-row">
+            <div class="hidden-overflow flex flex-row">
+                <div class="footer-links_2">
+                    <h5>Top tutorials</h5>
+                    <p>HTML tutorials</p>
+                    <p>css tutorials</p>
+                    <p>Javescript tutorials</p>
+                    <p>How to tutorials</p>
+                    <p>SQL tutorials</p>
+                    <p>Python tutorials</p>
+                    <p>W3.CSS Tutorial</p>
+                    <p>Bootstrap Tutorial</p>
+                    <p>PHP Tutorial</p>
+                    <p>Java Tutorial</p>
+                    <p>C++ Tutorial</p>
+                    <p>jQuery Tutorial</p>
+                </div>
+            </div>
+            
+    
+            <div class="hidden-overflow flex flex-row">
+                <div class="footer-links_2">
+                    <h5>Top Refrences</h5>
+                    <p>HTML Reference</p>
+                    <p>CSS Reference</p>
+                    <p>JavaScript Reference</p>
+                    <p>SQL Reference</p>
+                    <p>Python Reference</p>
+                    <p>W3.CSS Reference</p>
+                    <p>Bootstrap Reference</p>
+                    <p>PHP Reference</p>
+                    <p>HTML Colors</p>
+                    <p>Java Reference</p>
+                    <p>Angular Reference</p>
+                    <p>jQuery Reference</p>
+                </div>
+            </div>
+            
+    
+            <div class="hidden-overflow flex flex-row">
+                <div class="footer-links_2">
+                    <h5>Top tutorials</h5>
+                    <p>HTML Examples</p>
+                    <p>CSS Examples</p>
+                    <p>JavaScript Examples</p>
+                    <p>SQL Examples</p>
+                    <p>Python Examples</p>
+                    <p>W3.CSS Examples</p>
+                    <p>Bootstrap Examples</p>
+                    <p>PHP Examples</p>
+                    <p>Java Examples</p>
+                    <p>XML Examples</p>
+                    <p>jQuery Examples</p>
+                </div>
+            </div>
+    
+            <div class="hidden-overflow flex flex-row">
+                <div class="footer-links_2">
+                    <h5>Get Certified</h5>
+                    <p>HTML Certificate</p>
+                    <p>CSS Certificate</p>
+                    <p>JavaScript Certificate</p>
+                    <p>SQL Certificate</p>
+                    <p>Python Certificate</p>
+                    <p>W3.CSS Certificate</p>
+                    <p>Bootstrap Certificate</p>
+                    <p>PHP Certificate</p>
+                    <p>Java Certificate</p>
+                    <p>Jquery Certificate</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-contacts flex flex-row item-center">
+            <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50"
+                style="fill:#ffffff;">
+                <path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 25.832031 46 A 1.0001 1.0001 0 0 0 26.158203 46 L 31.832031 46 A 1.0001 1.0001 0 0 0 32.158203 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 33 44 L 33 30 L 36.820312 30 L 38.220703 23 L 33 23 L 33 21 C 33 20.442508 33.05305 20.398929 33.240234 20.277344 C 33.427419 20.155758 34.005822 20 35 20 L 38 20 L 38 14.369141 L 37.429688 14.097656 C 37.429688 14.097656 35.132647 13 32 13 C 29.75 13 27.901588 13.896453 26.71875 15.375 C 25.535912 16.853547 25 18.833333 25 21 L 25 23 L 22 23 L 22 30 L 25 30 L 25 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 32 15 C 34.079062 15 35.38736 15.458455 36 15.701172 L 36 18 L 35 18 C 33.849178 18 32.926956 18.0952 32.150391 18.599609 C 31.373826 19.104024 31 20.061492 31 21 L 31 25 L 35.779297 25 L 35.179688 28 L 31 28 L 31 44 L 27 44 L 27 28 L 24 28 L 24 25 L 27 25 L 27 21 C 27 19.166667 27.464088 17.646453 28.28125 16.625 C 29.098412 15.603547 30.25 15 32 15 z"></path>
+                </svg></p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256"
+                style="fill:#000000;">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M18.90625,7c0,0 -6.36719,0.4375 -10.53125,3.78125c-0.01953,0.00781 -0.04297,0.01953 -0.0625,0.03125c-0.72266,0.66797 -1.26562,1.70313 -1.9375,3.1875c-0.67187,1.48438 -1.38281,3.39453 -2.03125,5.53125c-1.29297,4.27734 -2.34375,9.52734 -2.34375,14.46875c-0.00391,0.17578 0.03906,0.34766 0.125,0.5c1.46094,2.56641 4.14844,4.11719 6.65625,5.09375c2.50781,0.97656 4.82422,1.36719 6,1.40625c0.33203,0.01172 0.64844,-0.14062 0.84375,-0.40625l2.4375,-3.375c1.96484,0.46484 4.26953,0.78125 6.9375,0.78125c2.66797,0 4.97266,-0.31641 6.9375,-0.78125l2.4375,3.375c0.19531,0.26563 0.51172,0.41797 0.84375,0.40625c1.17578,-0.03906 3.49219,-0.42969 6,-1.40625c2.50781,-0.97656 5.19531,-2.52734 6.65625,-5.09375c0.08594,-0.15234 0.12891,-0.32422 0.125,-0.5c0,-4.94141 -1.05078,-10.19141 -2.34375,-14.46875c-0.64844,-2.13672 -1.35937,-4.04687 -2.03125,-5.53125c-0.67187,-1.48437 -1.21484,-2.51953 -1.9375,-3.1875c-0.01953,-0.01172 -0.04297,-0.02344 -0.0625,-0.03125c-4.16406,-3.34375 -10.53125,-3.78125 -10.53125,-3.78125c-0.07422,-0.00781 -0.14453,-0.00781 -0.21875,0c-0.34766,0.04688 -0.64062,0.27344 -0.78125,0.59375c0,0 -0.33984,0.74609 -0.5625,1.8125c-1.94922,-0.3125 -3.58984,-0.40625 -4.53125,-0.40625c-0.94141,0 -2.58203,0.09375 -4.53125,0.40625c-0.22266,-1.06641 -0.5625,-1.8125 -0.5625,-1.8125c-0.17187,-0.39062 -0.57422,-0.62891 -1,-0.59375zM18.28125,9.15625c0.07422,0.20313 0.125,0.39453 0.1875,0.625c-2.25391,0.52344 -4.72266,1.37891 -7.03125,2.8125c-0.36328,0.15234 -0.60156,0.50391 -0.61328,0.89844c-0.00781,0.39063 0.21484,0.75391 0.56641,0.92578c0.35547,0.16797 0.77734,0.11719 1.07813,-0.13672c4.63281,-2.87109 10.52734,-3.28125 12.53125,-3.28125c2.00391,0 7.89844,0.41016 12.53125,3.28125c0.30078,0.25391 0.72266,0.30469 1.07813,0.13672c0.35156,-0.17187 0.57422,-0.53516 0.56641,-0.92578c-0.01172,-0.39453 -0.25,-0.74609 -0.61328,-0.89844c-2.30859,-1.43359 -4.77734,-2.28906 -7.03125,-2.8125c0.0625,-0.23047 0.11328,-0.42187 0.1875,-0.625c1.14063,0.14063 5.57422,0.73828 8.59375,3.125c0.19531,0.17969 0.875,1.17969 1.5,2.5625c0.625,1.38281 1.28125,3.18359 1.90625,5.25c1.21875,4.03125 2.20313,9.00391 2.25,13.5625c-1.13672,1.83984 -3.26953,3.20703 -5.46875,4.0625c-2,0.77734 -3.86719,1.125 -4.84375,1.21875l-1.6875,-2.28125c0.85938,-0.27734 1.63281,-0.57812 2.3125,-0.875c2.52344,-1.10937 3.875,-2.28125 3.875,-2.28125c0.41406,-0.37109 0.44922,-1.00781 0.07813,-1.42187c-0.37109,-0.41406 -1.00781,-0.44922 -1.42187,-0.07812c0,0 -1.04687,0.95703 -3.34375,1.96875c-0.84375,0.37109 -1.86719,0.73828 -3.03125,1.0625c-0.26953,-0.03125 -0.53906,0.04688 -0.75,0.21875c-1.86328,0.45313 -4.07812,0.75 -6.6875,0.75c-2.62891,0 -4.84766,-0.32422 -6.71875,-0.78125c-0.21094,-0.14062 -0.46875,-0.19922 -0.71875,-0.15625c-1.16797,-0.32422 -2.18359,-0.72266 -3.03125,-1.09375c-2.29687,-1.01172 -3.34375,-1.96875 -3.34375,-1.96875c-0.22656,-0.21094 -0.53906,-0.30078 -0.84375,-0.25c-0.38672,0.05859 -0.70703,0.33594 -0.8125,0.71484c-0.10937,0.375 0.01563,0.78125 0.3125,1.03516c0,0 1.35156,1.17188 3.875,2.28125c0.67969,0.29688 1.45313,0.59766 2.3125,0.875l-1.6875,2.28125c-0.97656,-0.09375 -2.84375,-0.44141 -4.84375,-1.21875c-2.19922,-0.85547 -4.33203,-2.22266 -5.46875,-4.0625c0.04688,-4.55859 1.03125,-9.53125 2.25,-13.5625c0.625,-2.06641 1.28125,-3.86719 1.90625,-5.25c0.625,-1.38281 1.30469,-2.38281 1.5,-2.5625c3.01953,-2.38672 7.45313,-2.98437 8.59375,-3.125zM18.5,21c-2.55078,0 -4.5,2.31641 -4.5,5c0,2.68359 1.94922,5 4.5,5c2.55078,0 4.5,-2.31641 4.5,-5c0,-2.68359 -1.94922,-5 -4.5,-5zM31.5,21c-2.55078,0 -4.5,2.31641 -4.5,5c0,2.68359 1.94922,5 4.5,5c2.55078,0 4.5,-2.31641 4.5,-5c0,-2.68359 -1.94922,-5 -4.5,-5zM18.5,23c1.31641,0 2.5,1.26563 2.5,3c0,1.73438 -1.18359,3 -2.5,3c-1.31641,0 -2.5,-1.26562 -2.5,-3c0,-1.73437 1.18359,-3 2.5,-3zM31.5,23c1.31641,0 2.5,1.26563 2.5,3c0,1.73438 -1.18359,3 -2.5,3c-1.31641,0 -2.5,-1.26562 -2.5,-3c0,-1.73437 1.18359,-3 2.5,-3z"></path></g></g>
+                </svg></p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256"
+                style="fill:#000000;">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M9,4c-2.74952,0 -5,2.25048 -5,5v32c0,2.74952 2.25048,5 5,5h32c2.74952,0 5,-2.25048 5,-5v-32c0,-2.74952 -2.25048,-5 -5,-5zM9,6h32c1.66848,0 3,1.33152 3,3v32c0,1.66848 -1.33152,3 -3,3h-32c-1.66848,0 -3,-1.33152 -3,-3v-32c0,-1.66848 1.33152,-3 3,-3zM14,11.01172c-1.09522,0 -2.08078,0.32736 -2.81055,0.94141c-0.72977,0.61405 -1.17773,1.53139 -1.17773,2.51367c0,1.86718 1.61957,3.32281 3.67969,3.4668c0.0013,0.00065 0.0026,0.0013 0.00391,0.00195c0.09817,0.03346 0.20099,0.05126 0.30469,0.05273c2.27301,0 3.98828,-1.5922 3.98828,-3.52148c-0.00018,-0.01759 -0.00083,-0.03518 -0.00195,-0.05274c-0.10175,-1.90023 -1.79589,-3.40234 -3.98633,-3.40234zM14,12.98828c1.39223,0 1.94197,0.62176 2.00195,1.50391c-0.01215,0.85625 -0.54186,1.51953 -2.00195,1.51953c-1.38541,0 -2.01172,-0.70949 -2.01172,-1.54492c0,-0.41771 0.15242,-0.7325 0.47266,-1.00195c0.32023,-0.26945 0.83428,-0.47656 1.53906,-0.47656zM11,19c-0.55226,0.00006 -0.99994,0.44774 -1,1v19c0.00006,0.55226 0.44774,0.99994 1,1h6c0.55226,-0.00006 0.99994,-0.44774 1,-1v-5.86523v-13.13477c-0.00006,-0.55226 -0.44774,-0.99994 -1,-1zM20,19c-0.55226,0.00006 -0.99994,0.44774 -1,1v19c0.00006,0.55226 0.44774,0.99994 1,1h6c0.55226,-0.00006 0.99994,-0.44774 1,-1v-10c0,-0.82967 0.22639,-1.65497 0.625,-2.19531c0.39861,-0.54035 0.90147,-0.86463 1.85742,-0.84766c0.98574,0.01695 1.50758,0.35464 1.90234,0.88477c0.39477,0.53013 0.61523,1.32487 0.61523,2.1582v10c0.00006,0.55226 0.44774,0.99994 1,1h6c0.55226,-0.00006 0.99994,-0.44774 1,-1v-10.73828c0,-2.96154 -0.87721,-5.30739 -2.38086,-6.89453c-1.50365,-1.58714 -3.59497,-2.36719 -5.80664,-2.36719c-2.10202,0 -3.70165,0.70489 -4.8125,1.42383v-0.42383c-0.00006,-0.55226 -0.44774,-0.99994 -1,-1zM12,21h4v12.13477v4.86523h-4zM21,21h4v1.56055c0.00013,0.43 0.27511,0.81179 0.68291,0.94817c0.40781,0.13638 0.85714,-0.00319 1.11591,-0.34661c0,0 1.57037,-2.16211 5.01367,-2.16211c1.75333,0 3.25687,0.58258 4.35547,1.74219c1.0986,1.15961 1.83203,2.94607 1.83203,5.51953v9.73828h-4v-9c0,-1.16667 -0.27953,-2.37289 -1.00977,-3.35352c-0.73023,-0.98062 -1.9584,-1.66341 -3.47266,-1.68945c-1.52204,-0.02703 -2.77006,0.66996 -3.50195,1.66211c-0.73189,0.99215 -1.01562,2.21053 -1.01562,3.38086v9h-4z"></path></g></g>
+                </svg></p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256"
+                style="fill:#000000;">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z"></path></g></g>
+                </svg></p>
+            <p>FORUM</p>
+            <p>ABOUT</p>
+        </div>
+        <div class="footer-text">
+            <p>W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning.</p>
+            <p>Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness</p>
+            <p style="margin-bottom: 20px;">of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.</p>
+            <p>Copyright 1999-2024 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
